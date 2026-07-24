@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deborah Ramos | Proposta Esteticlin Muniz</title>
+    <title>Deborah Ramos | Proposta Comercial</title>
 
     <!-- Google Fonts: Fraunces, Syne, Montserrat, Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +113,7 @@
                 Estratégia & Audiovisual
             </h2>
             <p class="font-jakarta text-lg md:text-2xl max-w-2xl mx-auto opacity-90 leading-relaxed font-medium text-balance text-tertiary/80">
-                Elevando a presença digital da <span class="text-primary font-bold">Esteticlin Muniz</span> com audiovisual de alto padrão e tráfego de precisão.
+                Elevando a presença digital da <span class="text-primary font-bold" data-cliente>[ Nome da Locadora ]</span> com audiovisual de alto padrão e tráfego de precisão.
             </p>
         </div>
     </section>
@@ -197,7 +197,7 @@
 
             <div class="px-6 md:px-12 max-w-4xl mx-auto mt-12">
                 <p class="font-jakarta text-lg md:text-2xl text-white/90 leading-relaxed font-medium">
-                    Não é apenas "postar vídeos". É construir percepção de valor. Produzimos conteúdo focado em <strong class="text-secondary font-bold">conversão visual</strong>: da logística da captação à direção de arte que transmite sofisticação e desperta o desejo pelo procedimento.
+                    Não é apenas "postar vídeos". É construir percepção de valor. Produzimos conteúdo focado em <strong class="text-secondary font-bold">conversão visual</strong>: da logística da captação à direção de arte que valoriza cada equipamento e desperta o interesse pela locação.
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 opacity-80 font-montserrat text-sm uppercase tracking-wider">
                     <div class="flex items-center gap-3"><span class="text-secondary text-xl">●</span> Logística & Planejamento</div>
@@ -217,7 +217,7 @@
 
             <div class="max-w-4xl">
                 <p class="font-jakarta text-lg md:text-2xl text-white/90 leading-relaxed font-medium mb-12 text-balance">
-                    Colocamos os seus procedimentos na frente das pessoas certas, no momento da decisão. Gerenciamos suas campanhas no <strong class="text-primary font-bold">Google Ads &amp; Meta Ads</strong> com foco em ROI e agendamentos reais.
+                    Colocamos os seus equipamentos na frente dos profissionais certos, no momento da decisão. Gerenciamos suas campanhas no <strong class="text-primary font-bold">Google Ads &amp; Meta Ads</strong> com foco em ROI e locações reais.
                 </p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-16 border-l border-white/10 pl-8">
@@ -227,7 +227,7 @@
                     </div>
                     <div class="group">
                         <h4 class="text-primary font-syne font-bold text-xl mb-3 tracking-tight">Público-Alvo</h4>
-                        <p class="text-white/60 text-sm leading-relaxed">Identificação e projeção precisa do perfil do cliente Esteticlin Muniz para otimização de verba.</p>
+                        <p class="text-white/60 text-sm leading-relaxed">Identificação e projeção precisa do perfil de cliente da <span data-cliente>[ Nome da Locadora ]</span> para otimização de verba.</p>
                     </div>
                     <div class="group">
                         <h4 class="text-primary font-syne font-bold text-xl mb-3 tracking-tight">Gestão Ativa</h4>
@@ -235,7 +235,7 @@
                     </div>
                     <div class="group">
                         <h4 class="text-primary font-syne font-bold text-xl mb-3 tracking-tight">Acompanhamento</h4>
-                        <p class="text-white/60 text-sm leading-relaxed">01 reunião mensal estratégica para debater resultados reais e planejar as próximas campanhas de captação.</p>
+                        <p class="text-white/60 text-sm leading-relaxed">01 reunião mensal estratégica para debater resultados reais e planejar as próximas campanhas de captação de locações.</p>
                     </div>
                 </div>
             </div>
@@ -416,7 +416,7 @@
         </div>
 
         <p class="text-center mt-12 font-montserrat uppercase tracking-[0.2em] text-[10px] font-bold opacity-30 italic">
-            Proposta válida por 05 dias úteis para a Esteticlin Muniz
+            Proposta válida por 05 dias úteis para a <span data-cliente>[ Nome da Locadora ]</span>
         </p>
     </section>
 
@@ -426,7 +426,7 @@
             <img src="./morango.png" alt="Logo Deborah Ramos" class="w-32 md:w-44 mb-10 animate-breath drop-shadow-[0_0_30px_rgba(236,9,52,0.6)]" onerror="this.style.display='none'">
             <h2 class="font-syne text-4xl md:text-6xl font-black mb-12 leading-tight uppercase text-balance">
                 Pronto para elevar a <br/>
-                <span class="text-secondary italic">Esteticlin Muniz?</span>
+                <span class="text-secondary italic" data-cliente data-suffix="?">[ Nome da Locadora ]?</span>
             </h2>
             <a href="https://wa.me/5585997446274" target="_blank" class="group relative inline-flex items-center justify-center px-10 md:px-14 py-5 md:py-6 font-syne font-bold text-lg md:text-xl text-white transition-all duration-300 bg-primary rounded-full hover:bg-white hover:text-primary shadow-[0_10px_40px_-10px_#EC0934]">
                 <span class="mr-4">FECHAR PACOTE AGORA</span>
@@ -436,7 +436,21 @@
     </section>
 
     <script>
+        // ============================================================
+        //  NOME DA MARCA — assim que o nome da locadora for definido,
+        //  basta escrevê-lo aqui entre as aspas. Ele será aplicado
+        //  automaticamente em toda a proposta (título, hero, rodapé,
+        //  validade e seção de público-alvo).
+        const NOME_CLIENTE = "Locadora de EQP";
+        // ============================================================
+
         document.addEventListener("DOMContentLoaded", function() {
+            if (NOME_CLIENTE.trim()) {
+                document.querySelectorAll('[data-cliente]').forEach(function(el) {
+                    el.textContent = NOME_CLIENTE + (el.dataset.suffix || '');
+                });
+                document.title = 'Deborah Ramos | Proposta ' + NOME_CLIENTE;
+            }
             const observerOptions = { threshold: 0.15 };
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
